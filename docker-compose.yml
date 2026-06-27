@@ -1,0 +1,9 @@
+services:
+  spark-etl:
+    image: apache/spark:3.5.1-java17-python3
+    container_name: api_retail_spark_etl
+    user: root
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: bash -lc "/opt/spark/bin/spark-submit src/jobs/transform_orders.py"
