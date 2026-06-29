@@ -1,4 +1,4 @@
-# Retail Sales Data Pipeline
+# Retail Sales DataOps Pipeline
 
 A complete data engineering project that ingests retail cart data from an API, stores the raw response, transforms nested JSON data using PySpark, generates a product-level sales report, and validates the pipeline through Docker, Terraform, and GitHub Actions CI/CD.
 
